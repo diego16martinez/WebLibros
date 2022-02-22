@@ -1,0 +1,16 @@
+<div>
+    <label>Libros</label>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Titulo</th>
+            <th>Autor</th>
+        </tr>
+        <tr *ngFor="let libro of listLibros">
+            <td><label>{{libro?.Id}}</label></td>
+            <td>--{{libro?.Titulo}}</td>
+            <td>--{{libro?.Autor}}</td>
+        </tr>
+    </table>
+    <button (click)="onClic()">imprimir</button>
+</div>
