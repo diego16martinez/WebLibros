@@ -1,6 +1,6 @@
 {
     "/api/*": {
-      "target": "http://localhost:12645",
+      "target": "https://apiweblibros.azurewebsites.net",
       "secure": false,
       "logLevel": "debug"
     }
