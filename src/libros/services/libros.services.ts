@@ -19,10 +19,10 @@ export class LibrosService {
     }
 
     get() {
-        return this.http.get<any[]>("/api/libros");
+        return this.http.get<any[]>(this.url+"/api/libros");
     }
     
     getById(Id: number) {
-        return this.http.get<any>(`/api/libros/${Id}`);
+        return this.http.get<any>(this.url+`/api/libros/${Id}`);
     }
 }
