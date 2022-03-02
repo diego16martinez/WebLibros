@@ -15,7 +15,7 @@ export class LibrosService {
     public listGroupsId: Array<number> = [];
 
     constructor(private http: HttpClient) {
-        this.url = "http://localhost:12645";
+        this.url = "https://apiweblibros.azurewebsites.net";
     }
 
     get() {
